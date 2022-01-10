@@ -10,23 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/about.js":
-/*!**********************!*\
-  !*** ./src/about.js ***!
-  \**********************/
+/***/ "./src/developer.js":
+/*!**************************!*\
+  !*** ./src/developer.js ***!
+  \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadAboutPage\": () => (/* binding */ loadAboutPage)\n/* harmony export */ });\nconst headline = document.createElement(\"h1\");\nheadline.innerHTML = \"About Us\";\n\nconst bodyText = document.createElement(\"p\");\nbodyText.innerHTML = \"I'm a righteous dude.\";\n\nfunction loadAboutPage() {\n    let block = document.getElementById(\"content\");\n    block.innerHTML = \"\";\n    block.appendChild(headline);\n    block.appendChild(bodyText);\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
-
-/***/ }),
-
-/***/ "./src/contact.js":
-/*!************************!*\
-  !*** ./src/contact.js ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadContactPage\": () => (/* binding */ loadContactPage)\n/* harmony export */ });\nconst headline = document.createElement(\"h1\");\nheadline.innerHTML = \"Contact Us\";\n\nconst bodyText = document.createElement(\"p\");\nbodyText.innerHTML = \"In order to contact us, please head to your local supermarket, purchase a bag of peach rings, and shove em up your butt.\";\n\nfunction loadContactPage() {\n    let block = document.getElementById(\"content\");\n    block.innerHTML = \"\";\n    block.appendChild(headline);\n    block.appendChild(bodyText);\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadDeveloperPage\": () => (/* binding */ loadDeveloperPage)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _musician__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./musician */ \"./src/musician.js\");\n/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! . */ \"./src/index.js\");\n\n\n\n\n// const headline = document.createElement(\"h1\");\n// headline.innerHTML = \"Developer\";\n\n// Create three main headings\nconst bodyText1 = document.createElement(\"h1\");\nbodyText1.innerHTML = \"Developer\";\nbodyText1.id = \"developer\";\nbodyText1.className += \" clickable titles\";\n\nconst bodyText2 = document.createElement(\"h1\");\nbodyText2.innerHTML = \"Musician\";\nbodyText2.id = \"musician\";\nbodyText2.className += \" clickable inactive titles\";\n\nconst bodyText3 = document.createElement(\"h1\");\nbodyText3.innerHTML = \"Learner\";\nbodyText3.id = \"learner\";\nbodyText3.className += \" clickable inactive titles\";\n\n// Create sub heading\nconst subHeading = document.createElement(\"h3\");\nsubHeading.innerHTML = \"HTML/CSS | JavaScript | PHP | Wordpress | C++ | Windows | Linux | Networking\";\nsubHeading.id = \"subheading\";\n\nfunction loadDeveloperPage() {\n    let block = document.getElementById(\"content\");\n    block.innerHTML = \"\";\n    let subBlock = document.getElementById(\"subcontent\");\n    subBlock.innerHTML = \"\";\n    let titleBlock = document.getElementById(\"titleRow\");\n    titleBlock.innerHTML = \"\";\n    \n    titleBlock.appendChild(bodyText1);\n    titleBlock.appendChild(bodyText2);\n    titleBlock.appendChild(bodyText3);\n    block.appendChild(subHeading);\n    // subblock.appendChild(subHeading); \n    (0,___WEBPACK_IMPORTED_MODULE_2__.eventLoad)();\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/developer.js?");
 
 /***/ }),
 
@@ -36,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadPage\": () => (/* binding */ loadPage)\n/* harmony export */ });\nconst headline = document.createElement(\"h1\");\nheadline.innerHTML = \"Austin TenBerge\";\n\nconst bodyText1 = document.createElement(\"h3\");\nbodyText1.innerHTML = \"Developer\";\nconst bodyText2 = document.createElement(\"h3\");\nbodyText2.innerHTML = \"Musician\";\nconst bodyText3 = document.createElement(\"h3\");\nbodyText3.innerHTML = \"Learner\" ;\n\nfunction loadPage() {\n    let block = document.getElementById(\"content\");\n    let subblock = document.getElementById(\"subcontent\");\n    block.innerHTML = \"\";\n    subblock.innerHTML = \"\";\n    block.appendChild(headline);\n    subblock.appendChild(bodyText1);\n    subblock.appendChild(bodyText2);\n    subblock.appendChild(bodyText3);\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadPage\": () => (/* binding */ loadPage)\n/* harmony export */ });\n/* harmony import */ var _developer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./developer */ \"./src/developer.js\");\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.js */ \"./src/index.js\");\n\n\n\nconst headline = document.createElement(\"h1\");\nheadline.innerHTML = \"Austin TenBerge\";\n\nconst bodyText1 = document.createElement(\"h3\");\nbodyText1.innerHTML = \"Developer\";\nbodyText1.id = \"developer\";\nbodyText1.className += \" clickable\";\n\nconst bodyText2 = document.createElement(\"h3\");\nbodyText2.innerHTML = \"Musician\";\nbodyText2.id = \"musician\";\nbodyText2.className += \" clickable\";\n\nconst bodyText3 = document.createElement(\"h3\");\nbodyText3.innerHTML = \"Learner\";\nbodyText3.id = \"learner\";\nbodyText3.className += \" clickable\";\n\nfunction loadPage() {\n    let block = document.getElementById(\"content\");\n    let subblock = document.getElementById(\"subcontent\");\n    let titleBlock = document.getElementById(\"titleRow\");\n    titleBlock.innerHTML = \"\";\n    subblock.innerHTML = \"\";\n    block.innerHTML = \"\";\n    block.appendChild(headline);\n    subblock.appendChild(bodyText1);\n    subblock.appendChild(bodyText2);\n    subblock.appendChild(bodyText3);\n    (0,_index_js__WEBPACK_IMPORTED_MODULE_1__.eventLoad)();\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
 
 /***/ }),
 
@@ -46,7 +36,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _about_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.js */ \"./src/about.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n\n\n\n\nfunction eventLoad() {\n    document.getElementById(\"home\").addEventListener(\"click\", _home_js__WEBPACK_IMPORTED_MODULE_0__.loadPage); \n    document.getElementById(\"about\").addEventListener(\"click\", _about_js__WEBPACK_IMPORTED_MODULE_1__.loadAboutPage);\n    document.getElementById(\"contact\").addEventListener(\"click\", _contact_js__WEBPACK_IMPORTED_MODULE_2__.loadContactPage);\n} \n\nwindow.onload = function() {\n    (0,_home_js__WEBPACK_IMPORTED_MODULE_0__.loadPage)();\n    eventLoad();\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"eventLoad\": () => (/* binding */ eventLoad)\n/* harmony export */ });\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _learner_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./learner.js */ \"./src/learner.js\");\n/* harmony import */ var _musician_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./musician.js */ \"./src/musician.js\");\n/* harmony import */ var _developer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./developer.js */ \"./src/developer.js\");\n\n\n\n\n\nfunction eventLoad() {\n    // document.getElementById(\"home\").addEventListener(\"click\", loadPage); \n    // document.getElementById(\"about\").addEventListener(\"click\", loadAboutPage);\n    // document.getElementById(\"contact\").addEventListener(\"click\", loadContactPage);\n\n    document.getElementById(\"home\").addEventListener(\"click\", _home_js__WEBPACK_IMPORTED_MODULE_0__.loadPage); \n    document.getElementById(\"developer\").addEventListener(\"click\", _developer_js__WEBPACK_IMPORTED_MODULE_3__.loadDeveloperPage);\n    document.getElementById(\"musician\").addEventListener(\"click\", _musician_js__WEBPACK_IMPORTED_MODULE_2__.loadMusicianPage);\n    document.getElementById(\"learner\").addEventListener(\"click\", _learner_js__WEBPACK_IMPORTED_MODULE_1__.loadLearnerPage); \n} \n\nwindow.onload = function() {\n    (0,_home_js__WEBPACK_IMPORTED_MODULE_0__.loadPage)();\n    eventLoad();\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/learner.js":
+/*!************************!*\
+  !*** ./src/learner.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadLearnerPage\": () => (/* binding */ loadLearnerPage)\n/* harmony export */ });\n/* harmony import */ var _musician__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./musician */ \"./src/musician.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! . */ \"./src/index.js\");\n\n\n\n\n// const headline = document.createElement(\"h1\");\n// headline.innerHTML = \"Learner\";\n\n// Create three main headings\nconst bodyText1 = document.createElement(\"h1\");\nbodyText1.innerHTML = \"Developer\";\nbodyText1.id = \"developer\";\nbodyText1.className += \" clickable titles inactive\";\n\nconst bodyText2 = document.createElement(\"h1\");\nbodyText2.innerHTML = \"Musician\";\nbodyText2.id = \"musician\";\nbodyText2.className += \" clickable inactive titles\";\n\nconst bodyText3 = document.createElement(\"h1\");\nbodyText3.innerHTML = \"Learner\";\nbodyText3.id = \"learner\";\nbodyText3.className += \" clickable titles\";\n\n// Create sub heading\nconst bodyText = document.createElement(\"p\");\nbodyText.innerHTML = \"I'm a learner dude.\";\n\nfunction loadLearnerPage() {\n    let block = document.getElementById(\"content\");\n    block.innerHTML = \"\";\n    let subblock = document.getElementById(\"subcontent\");\n    subblock.innerHTML = \"\";\n    let titleBlock = document.getElementById(\"titleRow\");\n    titleBlock.innerHTML = \"\";\n    \n    titleBlock.appendChild(bodyText1);\n    titleBlock.appendChild(bodyText2);\n    titleBlock.appendChild(bodyText3);\n    \n    block.appendChild(bodyText);\n\n    (0,___WEBPACK_IMPORTED_MODULE_2__.eventLoad)();\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/learner.js?");
+
+/***/ }),
+
+/***/ "./src/musician.js":
+/*!*************************!*\
+  !*** ./src/musician.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadMusicianPage\": () => (/* binding */ loadMusicianPage)\n/* harmony export */ });\n/* harmony import */ var _developer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./developer */ \"./src/developer.js\");\n/* harmony import */ var _learner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./learner */ \"./src/learner.js\");\n/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! . */ \"./src/index.js\");\n\n\n\n\n// const headline = document.createElement(\"h1\");\n// headline.innerHTML = \"Musician\";\n\n// Create three main headings\nconst bodyText1 = document.createElement(\"h1\");\nbodyText1.innerHTML = \"Developer\";\nbodyText1.id = \"developer\";\nbodyText1.className += \" clickable titles inactive\";\n\nconst bodyText2 = document.createElement(\"h1\");\nbodyText2.innerHTML = \"Musician\";\nbodyText2.id = \"musician\";\nbodyText2.className += \" clickable titles\";\n\nconst bodyText3 = document.createElement(\"h1\");\nbodyText3.innerHTML = \"Learner\";\nbodyText3.id = \"learner\";\nbodyText3.className += \" clickable inactive titles\";\n\n// Create sub heading\nconst bodyText = document.createElement(\"p\");\nbodyText.innerHTML = \"I'm a musician dude.\";\n\nfunction loadMusicianPage() {\n    let block = document.getElementById(\"content\");\n    block.innerHTML = \"\";\n    let subblock = document.getElementById(\"subcontent\");\n    subblock.innerHTML = \"\";\n    let titleBlock = document.getElementById(\"titleRow\");\n    titleBlock.innerHTML = \"\";\n    \n    titleBlock.appendChild(bodyText1);\n    titleBlock.appendChild(bodyText2);\n    titleBlock.appendChild(bodyText3);\n    \n    block.appendChild(bodyText);\n\n    (0,___WEBPACK_IMPORTED_MODULE_2__.eventLoad)();\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/musician.js?");
 
 /***/ })
 
@@ -109,7 +119,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
