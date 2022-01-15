@@ -82,3 +82,73 @@ nav > div > h4 {
 .inactive {
     opacity: 30%;
 }
+
+/* Musician page */
+#hero-musician {
+    display: block;
+    background-color: red;
+    height: 21em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.square {
+    flex-grow: 1;
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    border-color: gray;
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    margin: 2em auto;
+}
+
+label {
+    display: block;
+    margin: 1em auto;
+}
+
+#test-subcontent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 40em;
+    width: 70%;
+    margin: 0 auto;
+    align-content: space-between;
+}
+
+.row {
+    display: flex;
+    height: 8em;
+    width: 100%;
+    flex: 1;
+}
+
+#caption-1 {
+    background-color: blue;
+    flex: 1;
+    order: 1;
+}
+
+#video-1 {
+    background-color: green;
+    flex-grow: 2;
+    order: 2;
+}
+
+#caption-2 {
+    background-color: blue;
+    flex: 1;
+    order: 2;
+}
+
+#video-2 {
+    background-color: green;
+    flex-grow: 2;
+    order: 1;
+}
